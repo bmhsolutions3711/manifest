@@ -1,0 +1,55 @@
+# Runs in GitHub's cloud — does NOT need your MacBook Air powered or online.
+name: Generate Manifest briefing
+
+on:
+  schedule:
+    # Mon–Fri ~ morning Eastern (UTC cron; GitHub may delay a few minutes)
+    - cron: "15 12 * * 1-5"
+    # Sundays ~ morning Eastern
+    - cron: "15 12 * * 0"
+  workflow_dispatch:
+    inputs:
+      type:
+        description: "Briefing type"
+        required: true
+        default: auto
+        type: choice
+        options:
+          - auto
+          - weekday
+          - sunday
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate briefing
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          XAI_MODEL: ${{ vars.XAI_MODEL || 'grok-3' }}
+        run: |
+          TYPE="${{ github.event.inputs.type || 'auto' }}"
+          python scripts/generate_briefing.py --type "$TYPE"
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "manifest-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add briefings/
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "chore(manifest): cloud briefing $(date -u +%Y-%m-%d)"
+          git push
