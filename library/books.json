@@ -2,7 +2,7 @@
   "version": 1,
   "policy": {
     "max_active": 15,
-    "note": "Curated shelf for an AI-era entrepreneur. Not a bookstore. Phase 2 UI will read this file; MVP does not show Library yet."
+    "note": "Manifest Library — curated shelf for an AI-era entrepreneur. Not a bookstore. Phase 2 UI will read this file; MVP does not show Library yet."
   },
   "lanes": [
     "build",

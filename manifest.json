@@ -1,7 +1,7 @@
 {
-  "name": "AI Pulse",
-  "short_name": "AI Pulse",
-  "description": "AI briefings for the road. Open when you want. History included.",
+  "name": "Manifest",
+  "short_name": "Manifest",
+  "description": "Know what you're carrying. AI intelligence for builders on the move.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0b1220",

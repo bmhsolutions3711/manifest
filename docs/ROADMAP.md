@@ -1,4 +1,4 @@
-# AI Pulse — Roadmap
+# Manifest — Roadmap
 
 **Constraint (non-negotiable):** generation and hosting live in the cloud.  
 The MacBook Air does **not** need to be on or online for daily use.  
@@ -12,7 +12,7 @@ Eastern Time for all schedules. Phone-first UI.
 ## Product shape (end state)
 
 ```
-AI Pulse
+Manifest
 ├── Pulse       ← MVP: weekday brief + Sunday deep dive + history
 ├── Library     ← Phase 2: curated books (not thousands)
 ├── Playbooks   ← Phase 3: founder checklists
@@ -43,7 +43,7 @@ No server SQLite. Markdown + JSON *are* the database.
 
 - [ ] Push repo to GitHub as `ai-pulse`
 - [ ] Enable GitHub Pages (Actions deploy workflow)
-- [ ] Run **Generate AI Pulse briefing** once manually (Actions → Run workflow)
+- [ ] Run **Generate Manifest briefing** once manually (Actions → Run workflow)
 - [ ] Optional: set repo secret `XAI_API_KEY` for LLM-polished briefs
 - [ ] Phone: open site → Share → **Add to Home Screen**
 - [ ] Pause/delete Grok *notification* automations (this site replaces them)

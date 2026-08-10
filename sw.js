@@ -1,5 +1,5 @@
-/* Service worker: cache shell + opened briefings so you can re-read without signal. */
-const CACHE = "ai-pulse-v1";
+/* Manifest service worker: cache shell + opened briefings for weak-signal re-reads. */
+const CACHE = "manifest-v1";
 const SHELL = [
   "./",
   "./index.html",

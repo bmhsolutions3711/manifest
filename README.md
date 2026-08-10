@@ -1,7 +1,11 @@
-# AI Pulse
+# Manifest
 
-**AI briefings for the road.** Open on your phone when *you* want. History included.  
+**Know what you're carrying.**
+
+AI intelligence for builders on the move. Open on your phone when *you* want. History included.  
 **No notifications. No MacBook Air required** for daily use.
+
+Brand notes: **[docs/BRAND.md](docs/BRAND.md)**
 
 | You | What happens |
 |-----|----------------|
@@ -30,7 +34,7 @@ GitHub Pages = **static files only**.
 cd ~/ai-pulse
 git init
 git add .
-git commit -m "feat: AI Pulse MVP — reader, cloud generator, library schema"
+git commit -m "feat: Manifest MVP — reader, cloud generator, library schema"
 git branch -M main
 # Create empty public repo "ai-pulse" on GitHub, then:
 git remote add origin git@github.com:YOUR_USER/ai-pulse.git
@@ -50,7 +54,7 @@ git push -u origin main
 2. Optional: secret **`XAI_API_KEY`**  
    - Without key: RSS digest from solid AI feeds  
    - With key: LLM-polished mobile brief via xAI
-3. **Actions → Generate AI Pulse briefing → Run workflow** (test once)
+3. **Actions → Generate Manifest briefing → Run workflow** (test once)
 4. Schedule (UTC cron, morning Eastern):
    - Mon–Fri → weekday brief  
    - Sunday → deep dive  
@@ -64,7 +68,7 @@ git push -u origin main
 ### 5. Kill the old ping path
 
 Pause or delete Grok Automations that emailed/notified morning briefs.  
-**AI Pulse replaces that loop.**
+**Manifest replaces that loop.**
 
 ---
 

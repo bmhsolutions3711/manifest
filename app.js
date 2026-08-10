@@ -1,7 +1,7 @@
-/* AI Pulse — static reader. Works on GitHub Pages. No server. No Air. */
+/* Manifest — static reader. Works on GitHub Pages. No server. No Air. */
 
 const INDEX_URL = "briefings/index.json";
-const CACHE_NAME = "ai-pulse-v1";
+const CACHE_NAME = "manifest-v1";
 
 const state = {
   items: [],
