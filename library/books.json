@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "policy": {
+    "max_active": 15,
+    "note": "Curated shelf for an AI-era entrepreneur. Not a bookstore. Phase 2 UI will read this file; MVP does not show Library yet."
+  },
+  "lanes": [
+    "build",
+    "sell",
+    "ops",
+    "ai-literacy",
+    "markets",
+    "mindset"
+  ],
+  "books": [
+    {
+      "id": "hard-thing-about-hard-things",
+      "title": "The Hard Thing About Hard Things",
+      "author": "Ben Horowitz",
+      "lane": "ops",
+      "why": "Company-building when things break — closer to real founder life than inspirational startup Twitter.",
+      "when": "After you have (or are about to have) something real to operate.",
+      "status": "queued",
+      "action": "Write down your top 3 'hard things' if this business got real in 90 days.",
+      "links": {
+        "info": "https://www.harpercollins.com/products/the-hard-thing-about-hard-things-ben-horowitz"
+      }
+    },
+    {
+      "id": "high-output-management",
+      "title": "High Output Management",
+      "author": "Andrew S. Grove",
+      "lane": "ops",
+      "why": "Leverage, indicators, and meetings that don't waste life — works for solo ops and small teams.",
+      "when": "When your time is the bottleneck (already true on the road).",
+      "status": "queued",
+      "action": "Pick one weekly metric that would prove your AI idea is working.",
+      "links": {}
+    },
+    {
+      "id": "inspired",
+      "title": "Inspired",
+      "author": "Marty Cagan",
+      "lane": "build",
+      "why": "How strong product orgs decide what to build — antidote to feature theater.",
+      "when": "Before you pour months into an AI feature nobody asked for.",
+      "status": "queued",
+      "action": "Interview 3 people with the pain you think AI solves; write what they actually do today.",
+      "links": {}
+    },
+    {
+      "id": "traction",
+      "title": "Traction",
+      "author": "Gabriel Weinberg & Justin Mares",
+      "lane": "sell",
+      "why": "Distribution channels checklist — AI products still die from no customers, not no model.",
+      "when": "When you have a wedge and need first users/revenue.",
+      "status": "queued",
+      "action": "Score 3 traction channels you can run from a phone between loads.",
+      "links": {}
+    },
+    {
+      "id": "obviously-awesome",
+      "title": "Obviously Awesome",
+      "author": "April Dunford",
+      "lane": "sell",
+      "why": "Positioning so buyers get it in one sentence — critical in a noisy AI market.",
+      "when": "When you can demo something but can't explain why you vs ChatGPT-generic.",
+      "status": "queued",
+      "action": "Draft one positioning line: for [who] who [pain], we [difference].",
+      "links": {}
+    },
+    {
+      "id": "power-and-prediction",
+      "title": "Power and Prediction",
+      "author": "Ajay Agrawal, Joshua Gans, Avi Goldfarb",
+      "lane": "markets",
+      "why": "Economics of prediction/AI — where value and power actually move.",
+      "when": "Early — shapes which problems are businesses vs demos.",
+      "status": "queued",
+      "action": "Name one decision in freight/logistics where better prediction is worth real money.",
+      "links": {}
+    },
+    {
+      "id": "designing-ml-systems",
+      "title": "Designing Machine Learning Systems",
+      "author": "Chip Huyen",
+      "lane": "ai-literacy",
+      "why": "How ML products work in production — enough literacy to not get snowed by vendors.",
+      "when": "When you start buying/building anything beyond a thin API wrapper.",
+      "status": "queued",
+      "action": "List data you already touch (loads, rates, customers) that could feed a system.",
+      "links": {}
+    },
+    {
+      "id": "lean-startup",
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "lane": "build",
+      "why": "Build–measure–learn without burning a year. Classic for a reason; skim if you already live it.",
+      "when": "If you tend to overbuild before talking to users.",
+      "status": "queued",
+      "action": "Define a 2-week MVP you could validate without quitting trucking.",
+      "links": {}
+    },
+    {
+      "id": "crossing-the-chasm",
+      "title": "Crossing the Chasm",
+      "author": "Geoffrey A. Moore",
+      "lane": "sell",
+      "why": "B2B adoption reality — early fans ≠ mainstream buyers. Matters for enterprise AI.",
+      "when": "If you sell to businesses (brokers, fleets, shippers), not consumers.",
+      "status": "queued",
+      "action": "Identify your beachhead customer in one niche, not 'everyone in logistics.'",
+      "links": {}
+    },
+    {
+      "id": "hooked",
+      "title": "Hooked",
+      "author": "Nir Eyal",
+      "lane": "build",
+      "why": "Habit loops for products — use ethically; useful if you build tools people open daily.",
+      "when": "When designing something you want users to return to (like this Pulse).",
+      "status": "queued",
+      "action": "Map trigger → action → reward for one product idea.",
+      "links": {}
+    }
+  ]
+}

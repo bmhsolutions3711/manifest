@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="description" content="AI Pulse — AI briefings for the road. Open when you want. No notifications." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI Pulse" />
+  <title>AI Pulse</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1220'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%2338bdf8'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <div class="brand">
+        <span class="mark" aria-hidden="true"></span>
+        <div>
+          <h1>AI Pulse</h1>
+          <p class="tag">Open when you want · Eastern Time · no pings</p>
+        </div>
+      </div>
+      <button type="button" id="btn-refresh" class="ghost" title="Reload list">↻</button>
+    </header>
+
+    <nav class="filters" aria-label="Filter briefings">
+      <button type="button" class="chip active" data-filter="all">All</button>
+      <button type="button" class="chip" data-filter="weekday">Weekday</button>
+      <button type="button" class="chip" data-filter="sunday">Sunday</button>
+    </nav>
+
+    <p id="status" class="status" role="status"></p>
+
+    <main id="list-view">
+      <section id="list" class="list" aria-label="Briefing history"></section>
+      <p class="hint">Pull when you have a minute. History stays here.</p>
+    </main>
+
+    <section id="detail-view" class="detail" hidden>
+      <div class="detail-bar">
+        <button type="button" id="btn-back" class="ghost">← History</button>
+        <a id="btn-open-raw" class="ghost linkish" href="#" target="_blank" rel="noopener">Raw</a>
+      </div>
+      <article id="detail-body" class="prose"></article>
+    </section>
+  </div>
+
+  <!-- Marked for markdown → HTML (CDN; cached by service worker after first load) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
