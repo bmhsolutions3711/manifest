@@ -246,25 +246,50 @@ def build_markdown_feed_only(items: list[dict], brief_type: str, when: datetime)
     lines: list[str] = [
         f"# {title}",
         "",
-        f"_Cloud-generated feed digest · {when.strftime('%Y-%m-%d %H:%M %Z')} · Air not required_",
+        f"_Cloud-generated · {when.strftime('%Y-%m-%d %H:%M %Z')} · Air not required · ADHD drive-mode ready_",
         "",
         "## 60-second scan",
         "",
     ]
 
     for it in top[:5]:
-        lines.append(f"- {it['title']} — **{md_link(it['source'], it['url'])}**")
+        short = it["title"] if len(it["title"]) < 120 else it["title"][:117] + "…"
+        lines.append(f"- {short} — **{md_link(it['source'], it['url'])}**")
 
     if not top:
         lines.append("- Quiet collection window or feeds unreachable — check Actions logs.")
 
+    # Explicit speak script for the phone player (short, not the whole brief)
+    lines += ["", "## Speak", ""]
+    lines.append(
+        f"Manifest. {date_label}. "
+        + (
+            f"{min(5, len(top))} things worth your attention. "
+            if top
+            else "Quiet day. "
+        )
+    )
+    for n, it in enumerate(top[:5], 1):
+        short = it["title"] if len(it["title"]) < 100 else it["title"][:97] + "…"
+        lines.append(f"{n}. {short}")
+    if top:
+        lines.append(f"If you only open one thing: {top[0]['title'][:80]}.")
+    lines.append("That's the load. Manifest out.")
+
     lines += ["", "## Top stories", ""]
     for n, it in enumerate(top[:8], 1):
+        kind_hint = {
+            "lab": "Lab drop — primary source",
+            "newsletter": "Newsletter signal",
+            "press": "Press / industry",
+            "builder": "Builder / tools",
+            "video": "Video",
+        }.get(it["kind"], it["kind"])
         lines += [
             f"### {n}. {it['title']}",
-            f"- **Why it matters:** Source signal from {it['source']} ({it['kind']}).",
+            f"- **Why it matters:** {kind_hint} from {it['source']}. Skim if it touches your build or market.",
             f"- **Links:** {md_link('Open', it['url'])}",
-            f"- **Confidence:** Medium (raw feed; not human-edited)",
+            f"- **Confidence:** Medium (feed digest)",
             "",
         ]
 

@@ -23,7 +23,7 @@
           <p class="tag">Know what you're carrying · ET · no pings</p>
         </div>
       </div>
-      <button type="button" id="btn-refresh" class="ghost" title="Reload list">↻</button>
+      <button type="button" id="btn-refresh" class="ghost icon-btn" title="Reload" aria-label="Reload">↻</button>
     </header>
 
     <nav class="filters" aria-label="Filter briefings">
@@ -36,19 +36,35 @@
 
     <main id="list-view">
       <section id="list" class="list" aria-label="Briefing history"></section>
-      <p class="hint">Pull when you have a minute. History stays here.</p>
+      <p class="hint">Tap a card. Listen or skim. Full walls of text optional.</p>
     </main>
 
     <section id="detail-view" class="detail" hidden>
       <div class="detail-bar">
-        <button type="button" id="btn-back" class="ghost">← History</button>
-        <a id="btn-open-raw" class="ghost linkish" href="#" target="_blank" rel="noopener">Raw</a>
+        <button type="button" id="btn-back" class="ghost">← Back</button>
+        <div class="detail-actions">
+          <button type="button" id="btn-listen" class="primary listen-btn">▶ Listen</button>
+          <button type="button" id="btn-stop" class="ghost" hidden>Stop</button>
+        </div>
       </div>
-      <article id="detail-body" class="prose"></article>
+
+      <div id="player-bar" class="player-bar" hidden>
+        <div class="player-wave" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <p id="player-label" class="player-label">Playing summary…</p>
+      </div>
+
+      <header id="detail-hero" class="detail-hero"></header>
+
+      <div class="mode-toggle" role="tablist" aria-label="View mode">
+        <button type="button" class="mode-chip active" data-mode="drive" role="tab" aria-selected="true">Drive mode</button>
+        <button type="button" class="mode-chip" data-mode="deep" role="tab" aria-selected="false">Deep dive</button>
+      </div>
+
+      <div id="drive-view" class="drive-view"></div>
+      <article id="detail-body" class="prose deep-view" hidden></article>
     </section>
   </div>
 
-  <!-- Marked for markdown → HTML (CDN; cached by service worker after first load) -->
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
   <script src="app.js"></script>
 </body>

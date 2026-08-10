@@ -1,5 +1,5 @@
 /* Manifest service worker: cache shell + opened briefings for weak-signal re-reads. */
-const CACHE = "manifest-v1";
+const CACHE = "manifest-v2";
 const SHELL = [
   "./",
   "./index.html",
