@@ -1,13 +1,13 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-10T21:32:22Z",
+  "updated_at": "2026-08-10T23:49:04Z",
   "briefings": [
     {
       "id": "2026-08-10-weekday",
       "date": "2026-08-10",
       "type": "weekday",
-      "title": "AI Brief \u2014 Mon, Aug 10 2026 ET",
-      "summary": "What building an AI-native finance function taught me \u2014 OpenAI Blog",
+      "title": "AI Brief \u2014 Thursday 10 ET",
+      "summary": "Meta's new Glimmer AI model aims for personal superintelligence. TechCrunch",
       "file": "briefings/2026-08-10-weekday.md"
     }
   ]

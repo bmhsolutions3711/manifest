@@ -330,69 +330,79 @@ def build_markdown_feed_only(items: list[dict], brief_type: str, when: datetime)
     return "\n".join(lines)
 
 
-def polish_with_xai(items: list[dict], brief_type: str, when: datetime) -> str | None:
-    api_key = os.environ.get("XAI_API_KEY") or os.environ.get("GROK_API_KEY")
-    if not api_key:
-        return None
-
-    catalog = []
-    for it in items[:30]:
-        catalog.append(
+def _catalog(items: list[dict], limit: int = 28) -> list[dict]:
+    out = []
+    for it in items[:limit]:
+        out.append(
             {
                 "title": it["title"],
                 "url": it["url"],
                 "source": it["source"],
                 "kind": it["kind"],
-                "summary": it.get("summary") or "",
+                "summary": (it.get("summary") or "")[:200],
             }
         )
+    return out
 
+
+def polish_prompt(items: list[dict], brief_type: str, when: datetime) -> tuple[str, str]:
+    """Shared system + user prompts for any LLM (local or cloud)."""
     kind_label = "Sunday deep dive (weekly arcs)" if brief_type == "sunday" else "weekday mobile brief"
     system = (
-        "You are an AI intelligence officer writing for a hotshot trucker who reads on a phone. "
-        "Eastern Time. No fluff. Real markdown links only using URLs provided. "
-        "Never invent URLs. Skeptical of hype."
+        "You are Manifest, an AI intelligence officer for a hotshot trucker who reads on a phone "
+        "and has ADHD. Eastern Time. Short. Punchy. No fluff. Real markdown links only using URLs "
+        "provided — never invent URLs. Skeptical of hype. Drive-mode friendly."
     )
     user = f"""Write a {kind_label} for {when.strftime('%Y-%m-%d')} America/New_York.
 
-Use ONLY these source items (you may skip weak ones). Every story that needs a link must use a URL from this list:
+Use ONLY these source items (skip weak ones). Every link MUST be a URL from this list:
 
-{json.dumps(catalog, indent=2)}
+{json.dumps(_catalog(items), indent=2)}
 
-Format EXACTLY:
+Format EXACTLY (include ## Speak for phone TTS — short, not the whole brief):
 
-# AI Brief — {{weekday, Mon DD}} ET   (or Deep Dive title for Sunday)
+# AI Brief — {{weekday, Mon DD}} ET
+(or Deep Dive title for Sunday)
 
 ## 60-second scan
-- 5 bullets max with **[Source](url)**
+- 5 bullets max. Each ends with **[Source](url)**
 
-## Top stories (max 8)
-### N. headline
-- **Why it matters:** one sentence
-- **Links:** [Article](url)
+## Speak
+4–8 short spoken lines. Numbered. Under 20 words each when possible.
+End with: That's the load. Manifest out.
+
+## Top stories (max 6)
+### N. Short headline
+- **Why it matters:** one concrete sentence (product, money, or power)
+- **Links:** [Open](url)
 - **Confidence:** High|Medium|Rumor
 
 ## For builders / practical
-bullets with links
+bullets with links — or skip
 
 ## Business & policy
-bullets or skip
+bullets — or skip
 
 ## Watch / listen
-YouTube items only with links
-
-## Ignore this noise
-optional
+YouTube only, with links — or skip
 
 ## Close
-- **Read time:**
+- **Read time:** ~X min
 - **One tap action:** [label](url)
 
-Priorities: industry/products, practical tools, business/markets. Research only if impactful.
+Priorities: industry/products, practical tools, business/markets.
 """
+    return system, user
 
+
+def polish_with_xai(items: list[dict], brief_type: str, when: datetime) -> str | None:
+    api_key = os.environ.get("XAI_API_KEY") or os.environ.get("GROK_API_KEY")
+    if not api_key:
+        return None
+
+    system, user = polish_prompt(items, brief_type, when)
     body = {
-        "model": os.environ.get("XAI_MODEL", "grok-3"),
+        "model": os.environ.get("XAI_MODEL", "grok-4.3"),
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
@@ -415,13 +425,110 @@ Priorities: industry/products, practical tools, business/markets. Research only 
             data = json.loads(resp.read().decode("utf-8"))
         text = data["choices"][0]["message"]["content"]
         footer = (
-            "\n\n---\n\n_Manifest · LLM-polished cloud brief · xAI API · "
-            f"{when.strftime('%Y-%m-%d %H:%M %Z')} · laptop not involved_\n"
+            "\n\n---\n\n_Manifest · polished via xAI API · "
+            f"{when.strftime('%Y-%m-%d %H:%M %Z')}_\n"
         )
         return text.strip() + footer
     except Exception as e:
-        print(f"xAI polish failed, falling back to feed digest: {e}", file=sys.stderr)
+        print(f"xAI polish failed: {e}", file=sys.stderr)
         return None
+
+
+def ollama_base() -> str:
+    return (
+        os.environ.get("OLLAMA_HOST")
+        or os.environ.get("OLLAMA_BASE_URL")
+        or "http://127.0.0.1:11434"
+    ).rstrip("/")
+
+
+def ollama_available(timeout: float = 1.5) -> bool:
+    try:
+        req = urllib.request.Request(
+            f"{ollama_base()}/api/tags",
+            headers={"User-Agent": USER_AGENT},
+        )
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return resp.status == 200
+    except Exception:
+        return False
+
+
+def polish_with_ollama(items: list[dict], brief_type: str, when: datetime) -> str | None:
+    """Local Ollama (same idea as Radar). Free. Requires Air on + ollama serve."""
+    if not ollama_available():
+        return None
+
+    model = os.environ.get("OLLAMA_MODEL", "gemma2:9b")
+    system, user = polish_prompt(items, brief_type, when)
+    # Ollama chat: fold system into a single prompt for reliability on smaller models
+    prompt = f"{system}\n\n{user}\n\nRespond with the markdown brief only."
+
+    body = {
+        "model": model,
+        "prompt": prompt,
+        "stream": False,
+        "options": {
+            "temperature": 0.3,
+            "num_predict": 2500,
+        },
+    }
+    req = urllib.request.Request(
+        f"{ollama_base()}/api/generate",
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json", "User-Agent": USER_AGENT},
+        method="POST",
+    )
+    try:
+        print(f"Ollama polish with {model} at {ollama_base()} …", file=sys.stderr)
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        text = (data.get("response") or "").strip()
+        if not text:
+            return None
+        # Ensure Speak section exists for ADHD player even if model forgot
+        if "## Speak" not in text and "## speak" not in text.lower():
+            text += (
+                "\n\n## Speak\n\n"
+                f"Manifest. {when.strftime('%b %d')}. Here's the load.\n"
+                "That's the load. Manifest out.\n"
+            )
+        footer = (
+            f"\n\n---\n\n_Manifest · polished locally via Ollama `{model}` · "
+            f"{when.strftime('%Y-%m-%d %H:%M %Z')} · $0 API · Air was on_\n"
+        )
+        return text + footer
+    except Exception as e:
+        print(f"Ollama polish failed: {e}", file=sys.stderr)
+        return None
+
+
+def polish(
+    items: list[dict],
+    brief_type: str,
+    when: datetime,
+    prefer: str = "auto",
+) -> str | None:
+    """
+    prefer:
+      auto  — local Ollama if up, else xAI if key, else None
+      local — Ollama only
+      xai   — xAI only
+      none  — skip LLM
+    """
+    prefer = (prefer or "auto").lower()
+    if prefer == "none":
+        return None
+    if prefer == "local":
+        return polish_with_ollama(items, brief_type, when)
+    if prefer == "xai":
+        return polish_with_xai(items, brief_type, when)
+    # auto: prefer free local when Air is on (Ollama up), then paid cloud
+    if ollama_available():
+        md = polish_with_ollama(items, brief_type, when)
+        if md:
+            return md
+    return polish_with_xai(items, brief_type, when)
 
 
 def load_index() -> dict:
@@ -464,9 +571,17 @@ def first_paragraph_summary(md: str) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate Manifest briefing (cloud)")
+    parser = argparse.ArgumentParser(
+        description="Generate Manifest briefing (local Ollama and/or cloud)"
+    )
     parser.add_argument("--type", choices=["weekday", "sunday", "auto"], default="auto")
     parser.add_argument("--date", help="Override date YYYY-MM-DD (ET calendar day)")
+    parser.add_argument(
+        "--polish",
+        choices=["auto", "local", "xai", "none"],
+        default=os.environ.get("MANIFEST_POLISH", "auto"),
+        help="LLM polish: auto (Ollama if up, else xAI), local, xai, or none (RSS only)",
+    )
     args = parser.parse_args()
 
     when = now_et()
@@ -479,13 +594,14 @@ def main() -> int:
     rel_file = f"briefings/{file_id}.md"
     out_path = ROOT / rel_file
 
-    print(f"Generating {file_id} (ET)…", file=sys.stderr)
+    print(f"Generating {file_id} (ET)… polish={args.polish}", file=sys.stderr)
     print("Collecting feeds…", file=sys.stderr)
     items = collect_items()
     print(f"Items: {len(items)}", file=sys.stderr)
 
-    md = polish_with_xai(items, brief_type, when)
+    md = polish(items, brief_type, when, prefer=args.polish)
     if not md:
+        print("No LLM polish — writing RSS digest", file=sys.stderr)
         md = build_markdown_feed_only(items, brief_type, when)
 
     BRIEFINGS.mkdir(parents=True, exist_ok=True)

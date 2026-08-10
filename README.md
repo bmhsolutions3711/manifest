@@ -72,17 +72,33 @@ Pause or delete Grok Automations that emailed/notified morning briefs.
 
 ---
 
-## Local test (home only — not for road)
+## Local polish with Ollama (home / Air on)
+
+You already run **Ollama** (`gemma2:9b` — same stack as Radar). Manifest can polish briefs **for free** on this machine.
+
+| Where | What runs |
+|-------|-----------|
+| **Air on at home** | Feeds + **local Ollama** polish → optional `git push` |
+| **On the road / Air off** | GitHub Actions RSS digest (or xAI if you set a secret) |
 
 ```bash
+# Start Ollama app first, then:
 cd ~/ai-pulse
-python3 scripts/generate_briefing.py --type weekday
-python3 -m http.server 8765
-# http://127.0.0.1:8765
+./scripts/run-local.sh weekday          # write brief only
+PUSH=1 ./scripts/run-local.sh weekday   # write + commit + push to Pages
+
+# Or directly:
+python3 scripts/generate_briefing.py --type weekday --polish local
+# --polish auto   → Ollama if up, else xAI key, else RSS
+# --polish none   → RSS digest only
+# --polish xai    → paid API only
 ```
 
-macOS Python SSL tip: `python3 -m pip install --user certifi` if feeds fail locally.  
-GitHub Actions Ubuntu does not need that.
+Env knobs: `OLLAMA_MODEL` (default `gemma2:9b`), `OLLAMA_HOST` (default `http://127.0.0.1:11434`).
+
+**Cost:** local = **$0**. Cloud Actions without `XAI_API_KEY` = **$0** (RSS).
+
+macOS Python SSL tip: `python3 -m pip install --user certifi` if feeds fail locally.
 
 ---
 
