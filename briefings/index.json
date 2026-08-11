@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-10T23:49:04Z",
+  "updated_at": "2026-08-11T13:42:52Z",
   "briefings": [
+    {
+      "id": "2026-08-11-weekday",
+      "date": "2026-08-11",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Aug 11 2026 ET",
+      "summary": "Thinking of ACE? We Can Do It with Fewer Tokens \u2014 Hugging Face Blog",
+      "file": "briefings/2026-08-11-weekday.md"
+    },
     {
       "id": "2026-08-10-weekday",
       "date": "2026-08-10",
