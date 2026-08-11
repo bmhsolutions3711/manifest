@@ -1,5 +1,8 @@
 /* Manifest — ADHD-first reader. Drive mode + listen summary. Static / Pages. */
 
+/** Bump when shipping UI/behavior changes (shown in header pill). */
+const APP_VERSION = "0.2.0";
+
 const INDEX_URL = "briefings/index.json";
 const CACHE_NAME = "manifest-v2";
 const DONE_KEY = "manifest-done-v1";
@@ -662,7 +665,17 @@ function showList() {
   renderList();
 }
 
+function paintVersion() {
+  const el = $("#version-pill");
+  if (el) {
+    el.textContent = `v${APP_VERSION}`;
+    el.title = `Manifest v${APP_VERSION}`;
+  }
+}
+
 function bindUi() {
+  paintVersion();
+
   document.querySelectorAll(".chip").forEach((chip) => {
     chip.addEventListener("click", () => {
       document.querySelectorAll(".chip").forEach((c) => c.classList.remove("active"));
