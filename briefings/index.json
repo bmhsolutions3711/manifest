@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-11T13:42:52Z",
+  "updated_at": "2026-08-12T13:47:15Z",
   "briefings": [
+    {
+      "id": "2026-08-12-weekday",
+      "date": "2026-08-12",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Aug 12 2026 ET",
+      "summary": "From assistance to execution: How enterprises put AI to work \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-12-weekday.md"
+    },
     {
       "id": "2026-08-11-weekday",
       "date": "2026-08-11",
