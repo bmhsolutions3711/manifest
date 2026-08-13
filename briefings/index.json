@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-12T13:47:15Z",
+  "updated_at": "2026-08-13T13:47:29Z",
   "briefings": [
+    {
+      "id": "2026-08-13-weekday",
+      "date": "2026-08-13",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Aug 13 2026 ET",
+      "summary": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis \u2014 Hugging Face Blog",
+      "file": "briefings/2026-08-13-weekday.md"
+    },
     {
       "id": "2026-08-12-weekday",
       "date": "2026-08-12",
