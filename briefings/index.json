@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-13T13:47:29Z",
+  "updated_at": "2026-08-14T13:42:44Z",
   "briefings": [
+    {
+      "id": "2026-08-14-weekday",
+      "date": "2026-08-14",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Aug 14 2026 ET",
+      "summary": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets \u2014 Hugging Face Blog",
+      "file": "briefings/2026-08-14-weekday.md"
+    },
     {
       "id": "2026-08-13-weekday",
       "date": "2026-08-13",
