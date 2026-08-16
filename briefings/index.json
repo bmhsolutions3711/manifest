@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-14T13:42:44Z",
+  "updated_at": "2026-08-16T12:57:37Z",
   "briefings": [
+    {
+      "id": "2026-08-16-sunday",
+      "date": "2026-08-16",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Aug 16 2026 ET",
+      "summary": "How Claude\u2019s text watermark works \u2014 Anthropic",
+      "file": "briefings/2026-08-16-sunday.md"
+    },
     {
       "id": "2026-08-14-weekday",
       "date": "2026-08-14",
