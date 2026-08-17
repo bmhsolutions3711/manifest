@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-16T12:57:37Z",
+  "updated_at": "2026-08-17T13:06:00Z",
   "briefings": [
+    {
+      "id": "2026-08-17-weekday",
+      "date": "2026-08-17",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Aug 17 2026 ET",
+      "summary": "The Defender\u2019s Window \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-17-weekday.md"
+    },
     {
       "id": "2026-08-16-sunday",
       "date": "2026-08-16",
