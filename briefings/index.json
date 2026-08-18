@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-17T13:06:00Z",
+  "updated_at": "2026-08-18T13:07:30Z",
   "briefings": [
+    {
+      "id": "2026-08-18-weekday",
+      "date": "2026-08-18",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Aug 18 2026 ET",
+      "summary": "Partnering with CodeAI to prepare the first AI generation \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-18-weekday.md"
+    },
     {
       "id": "2026-08-17-weekday",
       "date": "2026-08-17",
