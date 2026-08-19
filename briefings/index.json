@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-18T13:07:30Z",
+  "updated_at": "2026-08-19T13:08:37Z",
   "briefings": [
+    {
+      "id": "2026-08-19-weekday",
+      "date": "2026-08-19",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Aug 19 2026 ET",
+      "summary": "ChatGPT Ads expands across Europe \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-19-weekday.md"
+    },
     {
       "id": "2026-08-18-weekday",
       "date": "2026-08-18",
