@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-23T12:59:15Z",
+  "updated_at": "2026-08-24T13:12:55Z",
   "briefings": [
+    {
+      "id": "2026-08-24-weekday",
+      "date": "2026-08-24",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Aug 24 2026 ET",
+      "summary": "From Atari to EVE Online: Building on 15 Years of AI Research in Games \u2014 Google DeepMind Blog",
+      "file": "briefings/2026-08-24-weekday.md"
+    },
     {
       "id": "2026-08-23-sunday",
       "date": "2026-08-23",
