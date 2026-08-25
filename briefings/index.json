@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-24T13:12:55Z",
+  "updated_at": "2026-08-25T13:11:35Z",
   "briefings": [
+    {
+      "id": "2026-08-25-weekday",
+      "date": "2026-08-25",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Aug 25 2026 ET",
+      "summary": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original \u2014 Hugging Face Blog",
+      "file": "briefings/2026-08-25-weekday.md"
+    },
     {
       "id": "2026-08-24-weekday",
       "date": "2026-08-24",
