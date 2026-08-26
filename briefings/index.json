@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-25T13:11:35Z",
+  "updated_at": "2026-08-26T13:16:30Z",
   "briefings": [
+    {
+      "id": "2026-08-26-weekday",
+      "date": "2026-08-26",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Aug 26 2026 ET",
+      "summary": "How loveholidays is making everyone a builder with Codex \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-26-weekday.md"
+    },
     {
       "id": "2026-08-25-weekday",
       "date": "2026-08-25",
