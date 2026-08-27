@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-26T13:16:30Z",
+  "updated_at": "2026-08-27T22:15:55Z",
   "briefings": [
+    {
+      "id": "2026-08-27-weekday",
+      "date": "2026-08-27",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Aug 27 2026 ET",
+      "summary": "Gemini Omni 1.1 Flash lets you build with more control \u2014 Google DeepMind Blog",
+      "file": "briefings/2026-08-27-weekday.md"
+    },
     {
       "id": "2026-08-26-weekday",
       "date": "2026-08-26",
