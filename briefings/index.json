@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-27T22:15:55Z",
+  "updated_at": "2026-08-28T22:19:51Z",
   "briefings": [
+    {
+      "id": "2026-08-28-weekday",
+      "date": "2026-08-28",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Aug 28 2026 ET",
+      "summary": "Supporting Thailand\u2019s next generation of AI startups \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-28-weekday.md"
+    },
     {
       "id": "2026-08-27-weekday",
       "date": "2026-08-27",
