@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-28T22:19:51Z",
+  "updated_at": "2026-08-30T16:37:37Z",
   "briefings": [
+    {
+      "id": "2026-08-30-sunday",
+      "date": "2026-08-30",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Aug 30 2026 ET",
+      "summary": "Our decision on Cursor following its acquisition by SpaceX \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-30-sunday.md"
+    },
     {
       "id": "2026-08-28-weekday",
       "date": "2026-08-28",
