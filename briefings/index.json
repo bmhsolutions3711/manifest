@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-30T16:37:37Z",
+  "updated_at": "2026-08-31T19:08:08Z",
   "briefings": [
+    {
+      "id": "2026-08-31-weekday",
+      "date": "2026-08-31",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Aug 31 2026 ET",
+      "summary": "A milestone in expanding access to AI \u2014 OpenAI Blog",
+      "file": "briefings/2026-08-31-weekday.md"
+    },
     {
       "id": "2026-08-30-sunday",
       "date": "2026-08-30",
