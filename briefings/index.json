@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-08-31T19:08:08Z",
+  "updated_at": "2026-09-01T16:45:27Z",
   "briefings": [
+    {
+      "id": "2026-09-01-weekday",
+      "date": "2026-09-01",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Sep 1 2026 ET",
+      "summary": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI \u2014 Hugging Face Blog",
+      "file": "briefings/2026-09-01-weekday.md"
+    },
     {
       "id": "2026-08-31-weekday",
       "date": "2026-08-31",
