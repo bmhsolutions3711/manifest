@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-01T16:45:27Z",
+  "updated_at": "2026-09-02T16:34:51Z",
   "briefings": [
+    {
+      "id": "2026-09-02-weekday",
+      "date": "2026-09-02",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Sep 2 2026 ET",
+      "summary": "Proactive cyber defense for governments and enterprises \u2014 Google DeepMind Blog",
+      "file": "briefings/2026-09-02-weekday.md"
+    },
     {
       "id": "2026-09-01-weekday",
       "date": "2026-09-01",
