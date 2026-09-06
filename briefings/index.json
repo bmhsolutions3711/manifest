@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-04T16:21:29Z",
+  "updated_at": "2026-09-06T15:24:40Z",
   "briefings": [
+    {
+      "id": "2026-09-06-sunday",
+      "date": "2026-09-06",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Sep 6 2026 ET",
+      "summary": "OpenClaw Power, MacBook Simplicity: Five Days With Grok Bot \u2014 Latent Space",
+      "file": "briefings/2026-09-06-sunday.md"
+    },
     {
       "id": "2026-09-04-weekday",
       "date": "2026-09-04",
