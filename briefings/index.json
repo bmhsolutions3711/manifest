@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-06T15:24:40Z",
+  "updated_at": "2026-09-07T17:44:50Z",
   "briefings": [
+    {
+      "id": "2026-09-07-weekday",
+      "date": "2026-09-07",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Sep 7 2026 ET",
+      "summary": "Supporting independent journalism in Ukraine \u2014 OpenAI Blog",
+      "file": "briefings/2026-09-07-weekday.md"
+    },
     {
       "id": "2026-09-06-sunday",
       "date": "2026-09-06",
