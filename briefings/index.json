@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-07T17:44:50Z",
+  "updated_at": "2026-09-08T16:38:17Z",
   "briefings": [
+    {
+      "id": "2026-09-08-weekday",
+      "date": "2026-09-08",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Sep 8 2026 ET",
+      "summary": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic \u2014 Hugging Face Blog",
+      "file": "briefings/2026-09-08-weekday.md"
+    },
     {
       "id": "2026-09-07-weekday",
       "date": "2026-09-07",
