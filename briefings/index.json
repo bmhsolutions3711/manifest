@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-09T16:38:40Z",
+  "updated_at": "2026-09-10T16:24:36Z",
   "briefings": [
+    {
+      "id": "2026-09-10-weekday",
+      "date": "2026-09-10",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Sep 10 2026 ET",
+      "summary": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules \u2014 OpenAI Blog",
+      "file": "briefings/2026-09-10-weekday.md"
+    },
     {
       "id": "2026-09-09-weekday",
       "date": "2026-09-09",
