@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-14T18:04:53Z",
+  "updated_at": "2026-09-15T16:59:48Z",
   "briefings": [
+    {
+      "id": "2026-09-15-weekday",
+      "date": "2026-09-15",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Sep 15 2026 ET",
+      "summary": "Your Agent Aced the Task. Will It Do It Again? \u2014 Hugging Face Blog",
+      "file": "briefings/2026-09-15-weekday.md"
+    },
     {
       "id": "2026-09-14-weekday",
       "date": "2026-09-14",
