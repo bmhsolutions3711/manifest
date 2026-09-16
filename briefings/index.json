@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-15T16:59:48Z",
+  "updated_at": "2026-09-16T16:55:34Z",
   "briefings": [
+    {
+      "id": "2026-09-16-weekday",
+      "date": "2026-09-16",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Sep 16 2026 ET",
+      "summary": "Helping older adults use AI in everyday life \u2014 OpenAI Blog",
+      "file": "briefings/2026-09-16-weekday.md"
+    },
     {
       "id": "2026-09-15-weekday",
       "date": "2026-09-15",
