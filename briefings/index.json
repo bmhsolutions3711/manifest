@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-17T16:59:45Z",
+  "updated_at": "2026-09-18T16:24:04Z",
   "briefings": [
+    {
+      "id": "2026-09-18-weekday",
+      "date": "2026-09-18",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Sep 18 2026 ET",
+      "summary": "How Cooley is accelerating IPO work with ChatGPT \u2014 OpenAI Blog",
+      "file": "briefings/2026-09-18-weekday.md"
+    },
     {
       "id": "2026-09-17-weekday",
       "date": "2026-09-17",
