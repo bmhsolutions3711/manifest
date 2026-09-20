@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-18T16:24:04Z",
+  "updated_at": "2026-09-20T15:59:52Z",
   "briefings": [
+    {
+      "id": "2026-09-20-sunday",
+      "date": "2026-09-20",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Sep 20 2026 ET",
+      "summary": "Introducing the Australian Youth Safety Blueprint \u2014 OpenAI Blog",
+      "file": "briefings/2026-09-20-sunday.md"
+    },
     {
       "id": "2026-09-18-weekday",
       "date": "2026-09-18",
