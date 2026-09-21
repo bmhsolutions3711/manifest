@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-20T15:59:52Z",
+  "updated_at": "2026-09-21T18:12:37Z",
   "briefings": [
+    {
+      "id": "2026-09-21-weekday",
+      "date": "2026-09-21",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Sep 21 2026 ET",
+      "summary": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem \u2014 Hugging Face Blog",
+      "file": "briefings/2026-09-21-weekday.md"
+    },
     {
       "id": "2026-09-20-sunday",
       "date": "2026-09-20",
