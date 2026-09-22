@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-21T18:12:37Z",
+  "updated_at": "2026-09-22T16:57:24Z",
   "briefings": [
+    {
+      "id": "2026-09-22-weekday",
+      "date": "2026-09-22",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Sep 22 2026 ET",
+      "summary": "Transformers now runs llama.cpp quants \u2014 Hugging Face Blog",
+      "file": "briefings/2026-09-22-weekday.md"
+    },
     {
       "id": "2026-09-21-weekday",
       "date": "2026-09-21",
