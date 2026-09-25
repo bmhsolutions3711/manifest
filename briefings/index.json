@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-24T17:11:27Z",
+  "updated_at": "2026-09-25T17:11:32Z",
   "briefings": [
+    {
+      "id": "2026-09-25-weekday",
+      "date": "2026-09-25",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Sep 25 2026 ET",
+      "summary": "Proaction boosts sales 60% and saves 75+ hours with Codex \u2014 OpenAI Blog",
+      "file": "briefings/2026-09-25-weekday.md"
+    },
     {
       "id": "2026-09-24-weekday",
       "date": "2026-09-24",
