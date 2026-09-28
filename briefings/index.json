@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-27T16:55:00Z",
+  "updated_at": "2026-09-28T19:41:03Z",
   "briefings": [
+    {
+      "id": "2026-09-28-weekday",
+      "date": "2026-09-28",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Sep 28 2026 ET",
+      "summary": "Holo4: powering generalist computer-use agents \u2014 Hugging Face Blog",
+      "file": "briefings/2026-09-28-weekday.md"
+    },
     {
       "id": "2026-09-27-sunday",
       "date": "2026-09-27",
