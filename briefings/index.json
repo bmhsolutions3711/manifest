@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-29T18:05:04Z",
+  "updated_at": "2026-09-30T17:59:50Z",
   "briefings": [
+    {
+      "id": "2026-09-30-weekday",
+      "date": "2026-09-30",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Sep 30 2026 ET",
+      "summary": "Introducing SynthID Bio \u2014 Google DeepMind Blog",
+      "file": "briefings/2026-09-30-weekday.md"
+    },
     {
       "id": "2026-09-29-weekday",
       "date": "2026-09-29",
