@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-09-30T17:59:50Z",
+  "updated_at": "2026-10-01T18:25:23Z",
   "briefings": [
+    {
+      "id": "2026-10-01-weekday",
+      "date": "2026-10-01",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Oct 1 2026 ET",
+      "summary": "The eternal complement \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-01-weekday.md"
+    },
     {
       "id": "2026-09-30-weekday",
       "date": "2026-09-30",
