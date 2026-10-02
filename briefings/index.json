@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-01T18:25:23Z",
+  "updated_at": "2026-10-02T17:52:30Z",
   "briefings": [
+    {
+      "id": "2026-10-02-weekday",
+      "date": "2026-10-02",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Oct 2 2026 ET",
+      "summary": "A model guide for the GPT-6 family \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-02-weekday.md"
+    },
     {
       "id": "2026-10-01-weekday",
       "date": "2026-10-01",
