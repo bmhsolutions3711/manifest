@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-02T17:52:30Z",
+  "updated_at": "2026-10-04T16:49:52Z",
   "briefings": [
+    {
+      "id": "2026-10-04-sunday",
+      "date": "2026-10-04",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Oct 4 2026 ET",
+      "summary": "The Agent Said It Was Done. The Database Disagreed. \u2014 Hugging Face Blog",
+      "file": "briefings/2026-10-04-sunday.md"
+    },
     {
       "id": "2026-10-02-weekday",
       "date": "2026-10-02",
