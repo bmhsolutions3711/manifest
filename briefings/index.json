@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-04T16:49:52Z",
+  "updated_at": "2026-10-05T20:44:08Z",
   "briefings": [
+    {
+      "id": "2026-10-05-weekday",
+      "date": "2026-10-05",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Oct 5 2026 ET",
+      "summary": "Our approach to EU text provenance rules \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-05-weekday.md"
+    },
     {
       "id": "2026-10-04-sunday",
       "date": "2026-10-04",
