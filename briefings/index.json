@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-07T18:57:05Z",
+  "updated_at": "2026-10-08T18:51:06Z",
   "briefings": [
+    {
+      "id": "2026-10-08-weekday",
+      "date": "2026-10-08",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Oct 8 2026 ET",
+      "summary": "How Oracle turns days of work into minutes with ChatGPT and Codex \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-08-weekday.md"
+    },
     {
       "id": "2026-10-07-weekday",
       "date": "2026-10-07",
