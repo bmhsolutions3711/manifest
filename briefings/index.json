@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-08T18:51:06Z",
+  "updated_at": "2026-10-09T18:21:11Z",
   "briefings": [
+    {
+      "id": "2026-10-09-weekday",
+      "date": "2026-10-09",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Oct 9 2026 ET",
+      "summary": "Impactful scheduling for GPU clusters \u2014 Hugging Face Blog",
+      "file": "briefings/2026-10-09-weekday.md"
+    },
     {
       "id": "2026-10-08-weekday",
       "date": "2026-10-08",
