@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-12T21:16:10Z",
+  "updated_at": "2026-10-13T19:17:40Z",
   "briefings": [
+    {
+      "id": "2026-10-13-weekday",
+      "date": "2026-10-13",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Oct 13 2026 ET",
+      "summary": "Run fast, private agents on-device with LFM2.5-24B-A2B \u2014 Hugging Face Blog",
+      "file": "briefings/2026-10-13-weekday.md"
+    },
     {
       "id": "2026-10-12-weekday",
       "date": "2026-10-12",
