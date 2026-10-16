@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-15T17:00:57Z",
+  "updated_at": "2026-10-16T16:39:37Z",
   "briefings": [
+    {
+      "id": "2026-10-16-weekday",
+      "date": "2026-10-16",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Oct 16 2026 ET",
+      "summary": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline \u2014 Hugging Face Blog",
+      "file": "briefings/2026-10-16-weekday.md"
+    },
     {
       "id": "2026-10-15-weekday",
       "date": "2026-10-15",
