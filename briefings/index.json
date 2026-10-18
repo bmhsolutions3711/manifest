@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-16T16:39:37Z",
+  "updated_at": "2026-10-18T15:47:44Z",
   "briefings": [
+    {
+      "id": "2026-10-18-sunday",
+      "date": "2026-10-18",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Oct 18 2026 ET",
+      "summary": "How Ita\u00fa is building generative AI for its entire customer base \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-18-sunday.md"
+    },
     {
       "id": "2026-10-16-weekday",
       "date": "2026-10-16",
