@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-18T15:47:44Z",
+  "updated_at": "2026-10-19T18:42:58Z",
   "briefings": [
+    {
+      "id": "2026-10-19-weekday",
+      "date": "2026-10-19",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Oct 19 2026 ET",
+      "summary": "Investing in the public benefit \u2014 Anthropic",
+      "file": "briefings/2026-10-19-weekday.md"
+    },
     {
       "id": "2026-10-18-sunday",
       "date": "2026-10-18",
