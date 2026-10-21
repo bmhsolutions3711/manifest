@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-20T17:03:53Z",
+  "updated_at": "2026-10-21T17:12:16Z",
   "briefings": [
+    {
+      "id": "2026-10-21-weekday",
+      "date": "2026-10-21",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Oct 21 2026 ET",
+      "summary": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium. \u2014 Hugging Face Blog",
+      "file": "briefings/2026-10-21-weekday.md"
+    },
     {
       "id": "2026-10-20-weekday",
       "date": "2026-10-20",
