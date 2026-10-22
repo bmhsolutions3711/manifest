@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-21T17:12:16Z",
+  "updated_at": "2026-10-22T17:10:37Z",
   "briefings": [
+    {
+      "id": "2026-10-22-weekday",
+      "date": "2026-10-22",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Oct 22 2026 ET",
+      "summary": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet \u2014 Hugging Face Blog",
+      "file": "briefings/2026-10-22-weekday.md"
+    },
     {
       "id": "2026-10-21-weekday",
       "date": "2026-10-21",
