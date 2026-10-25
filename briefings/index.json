@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-23T17:07:02Z",
+  "updated_at": "2026-10-25T16:07:50Z",
   "briefings": [
+    {
+      "id": "2026-10-25-sunday",
+      "date": "2026-10-25",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Oct 25 2026 ET",
+      "summary": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II) \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-25-sunday.md"
+    },
     {
       "id": "2026-10-23-weekday",
       "date": "2026-10-23",
