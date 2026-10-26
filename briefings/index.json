@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-25T16:07:50Z",
+  "updated_at": "2026-10-26T18:40:50Z",
   "briefings": [
+    {
+      "id": "2026-10-26-weekday",
+      "date": "2026-10-26",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Oct 26 2026 ET",
+      "summary": "ChatGPT\u2019s expanding world of work \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-26-weekday.md"
+    },
     {
       "id": "2026-10-25-sunday",
       "date": "2026-10-25",
