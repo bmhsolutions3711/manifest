@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-26T18:40:50Z",
+  "updated_at": "2026-10-27T18:00:15Z",
   "briefings": [
+    {
+      "id": "2026-10-27-weekday",
+      "date": "2026-10-27",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Oct 27 2026 ET",
+      "summary": "Build specialized multimodal models with LFM3 \u2014 Hugging Face Blog",
+      "file": "briefings/2026-10-27-weekday.md"
+    },
     {
       "id": "2026-10-26-weekday",
       "date": "2026-10-26",
