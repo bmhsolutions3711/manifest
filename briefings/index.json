@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-27T18:00:15Z",
+  "updated_at": "2026-10-28T18:20:40Z",
   "briefings": [
+    {
+      "id": "2026-10-28-weekday",
+      "date": "2026-10-28",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Oct 28 2026 ET",
+      "summary": "Gemini 4 Carbon: Our next frontier model \u2014 Google DeepMind Blog",
+      "file": "briefings/2026-10-28-weekday.md"
+    },
     {
       "id": "2026-10-27-weekday",
       "date": "2026-10-27",
