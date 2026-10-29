@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-28T18:20:40Z",
+  "updated_at": "2026-10-29T18:28:01Z",
   "briefings": [
+    {
+      "id": "2026-10-29-weekday",
+      "date": "2026-10-29",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Oct 29 2026 ET",
+      "summary": "An updated Model Spec for more capable and beneficial AI \u2014 OpenAI Blog",
+      "file": "briefings/2026-10-29-weekday.md"
+    },
     {
       "id": "2026-10-28-weekday",
       "date": "2026-10-28",
