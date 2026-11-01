@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-10-30T18:00:02Z",
+  "updated_at": "2026-11-01T17:54:28Z",
   "briefings": [
+    {
+      "id": "2026-11-01-sunday",
+      "date": "2026-11-01",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Nov 1 2026 ET",
+      "summary": "nemotron-halloween \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-01-sunday.md"
+    },
     {
       "id": "2026-10-30-weekday",
       "date": "2026-10-30",
