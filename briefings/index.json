@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-05T19:56:47Z",
+  "updated_at": "2026-11-06T19:24:17Z",
   "briefings": [
+    {
+      "id": "2026-11-06-weekday",
+      "date": "2026-11-06",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Nov 6 2026 ET",
+      "summary": "ToyBlocks: A controlled world for robot learning and evaluation \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-06-weekday.md"
+    },
     {
       "id": "2026-11-05-weekday",
       "date": "2026-11-05",
