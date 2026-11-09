@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-08T17:53:54Z",
+  "updated_at": "2026-11-09T22:21:22Z",
   "briefings": [
+    {
+      "id": "2026-11-09-weekday",
+      "date": "2026-11-09",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Nov 9 2026 ET",
+      "summary": "ChatGPT Enterprise now available in AWS Marketplace \u2014 OpenAI Blog",
+      "file": "briefings/2026-11-09-weekday.md"
+    },
     {
       "id": "2026-11-08-sunday",
       "date": "2026-11-08",
