@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-13T19:41:29Z",
+  "updated_at": "2026-11-15T18:46:33Z",
   "briefings": [
+    {
+      "id": "2026-11-15-sunday",
+      "date": "2026-11-15",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Nov 15 2026 ET",
+      "summary": "Build a Robot Pick-and-Place Simulation with SimReady Assets \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-15-sunday.md"
+    },
     {
       "id": "2026-11-13-weekday",
       "date": "2026-11-13",
