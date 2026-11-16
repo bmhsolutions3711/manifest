@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-15T18:46:33Z",
+  "updated_at": "2026-11-16T22:01:17Z",
   "briefings": [
+    {
+      "id": "2026-11-16-weekday",
+      "date": "2026-11-16",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Nov 16 2026 ET",
+      "summary": "Broadening access to AI for scientists \u2014 OpenAI Blog",
+      "file": "briefings/2026-11-16-weekday.md"
+    },
     {
       "id": "2026-11-15-sunday",
       "date": "2026-11-15",
