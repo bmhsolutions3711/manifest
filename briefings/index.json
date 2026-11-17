@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-16T22:01:17Z",
+  "updated_at": "2026-11-17T20:54:52Z",
   "briefings": [
+    {
+      "id": "2026-11-17-weekday",
+      "date": "2026-11-17",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Nov 17 2026 ET",
+      "summary": "Introducing GPT-6.2 Astra and Sol \u2014 OpenAI Blog",
+      "file": "briefings/2026-11-17-weekday.md"
+    },
     {
       "id": "2026-11-16-weekday",
       "date": "2026-11-16",
