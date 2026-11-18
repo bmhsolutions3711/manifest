@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-17T20:54:52Z",
+  "updated_at": "2026-11-18T20:30:50Z",
   "briefings": [
+    {
+      "id": "2026-11-18-weekday",
+      "date": "2026-11-18",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Nov 18 2026 ET",
+      "summary": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-18-weekday.md"
+    },
     {
       "id": "2026-11-17-weekday",
       "date": "2026-11-17",
