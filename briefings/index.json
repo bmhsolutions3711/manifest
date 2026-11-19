@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-18T20:30:50Z",
+  "updated_at": "2026-11-19T20:37:19Z",
   "briefings": [
+    {
+      "id": "2026-11-19-weekday",
+      "date": "2026-11-19",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Nov 19 2026 ET",
+      "summary": "How OpenAI\u2019s Performance Factory keeps ChatGPT fast \u2014 OpenAI Blog",
+      "file": "briefings/2026-11-19-weekday.md"
+    },
     {
       "id": "2026-11-18-weekday",
       "date": "2026-11-18",
