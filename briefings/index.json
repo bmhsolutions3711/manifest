@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-19T20:37:19Z",
+  "updated_at": "2026-11-20T20:19:01Z",
   "briefings": [
+    {
+      "id": "2026-11-20-weekday",
+      "date": "2026-11-20",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Nov 20 2026 ET",
+      "summary": "Combatting adversarial distillation \u2014 OpenAI Blog",
+      "file": "briefings/2026-11-20-weekday.md"
+    },
     {
       "id": "2026-11-19-weekday",
       "date": "2026-11-19",
