@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-20T20:19:01Z",
+  "updated_at": "2026-11-22T19:30:19Z",
   "briefings": [
+    {
+      "id": "2026-11-22-sunday",
+      "date": "2026-11-22",
+      "type": "sunday",
+      "title": "AI Weekly Deep Dive \u2014 week of Sun, Nov 22 2026 ET",
+      "summary": "Perplexity and Intelligence \u2014 OpenAI Blog",
+      "file": "briefings/2026-11-22-sunday.md"
+    },
     {
       "id": "2026-11-20-weekday",
       "date": "2026-11-20",
