@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-22T19:30:19Z",
+  "updated_at": "2026-11-23T23:53:29Z",
   "briefings": [
+    {
+      "id": "2026-11-23-weekday",
+      "date": "2026-11-23",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Mon, Nov 23 2026 ET",
+      "summary": "OpenAI and Cisco introduce Shirudo \u2014 OpenAI Blog",
+      "file": "briefings/2026-11-23-weekday.md"
+    },
     {
       "id": "2026-11-22-sunday",
       "date": "2026-11-22",
