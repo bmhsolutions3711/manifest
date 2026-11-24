@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-23T23:53:29Z",
+  "updated_at": "2026-11-24T22:26:20Z",
   "briefings": [
+    {
+      "id": "2026-11-24-weekday",
+      "date": "2026-11-24",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Tue, Nov 24 2026 ET",
+      "summary": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-24-weekday.md"
+    },
     {
       "id": "2026-11-23-weekday",
       "date": "2026-11-23",
