@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-24T22:26:20Z",
+  "updated_at": "2026-11-25T21:41:53Z",
   "briefings": [
+    {
+      "id": "2026-11-25-weekday",
+      "date": "2026-11-25",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Wed, Nov 25 2026 ET",
+      "summary": "Where scientists draw the line on AI agents \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-25-weekday.md"
+    },
     {
       "id": "2026-11-24-weekday",
       "date": "2026-11-24",
