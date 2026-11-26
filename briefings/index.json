@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-25T21:41:53Z",
+  "updated_at": "2026-11-26T21:31:22Z",
   "briefings": [
+    {
+      "id": "2026-11-26-weekday",
+      "date": "2026-11-26",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Thu, Nov 26 2026 ET",
+      "summary": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-26-weekday.md"
+    },
     {
       "id": "2026-11-25-weekday",
       "date": "2026-11-25",
