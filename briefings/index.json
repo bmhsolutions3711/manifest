@@ -1,7 +1,15 @@
 {
   "timezone": "America/New_York",
-  "updated_at": "2026-11-26T21:31:22Z",
+  "updated_at": "2026-11-27T21:17:07Z",
   "briefings": [
+    {
+      "id": "2026-11-27-weekday",
+      "date": "2026-11-27",
+      "type": "weekday",
+      "title": "AI Brief \u2014 Fri, Nov 27 2026 ET",
+      "summary": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5 \u2014 Hugging Face Blog",
+      "file": "briefings/2026-11-27-weekday.md"
+    },
     {
       "id": "2026-11-26-weekday",
       "date": "2026-11-26",
